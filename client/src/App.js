@@ -19,8 +19,8 @@ const App = () => {
       {message && <p>{message}</p>}
       {!user ? (
         <div>
-          <Register />
-          <Login />
+          <Register setMessage={setMessage}/>
+          <Login setUser={setUser} setMessage={setMessage}/>
         </div>
       ) : (
         <div>
